@@ -4,7 +4,6 @@ const cors = require("cors");
 const { Vimeo } = require("vimeo");
 require("dotenv").config();
 require("dotenv").config();
-console.log("Vimeo credentials:");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
