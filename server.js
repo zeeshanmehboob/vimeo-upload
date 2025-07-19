@@ -3,6 +3,12 @@ const multer = require("multer");
 const cors = require("cors");
 const { Vimeo } = require("vimeo");
 require("dotenv").config();
+require("dotenv").config();
+console.log("Vimeo credentials:");
+console.log("CLIENT_ID:", process.env.VIMEO_CLIENT_ID);
+console.log("CLIENT_SECRET:", process.env.VIMEO_CLIENT_SECRET);
+console.log("ACCESS_TOKEN:", process.env.VIMEO_ACCESS_TOKEN);
+
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
