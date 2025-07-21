@@ -41,7 +41,7 @@ app.post("/upload", upload.single("video"), function (req, res) {
       console.log("✅ Upload complete! Video URI:", uri);
       var parts = uri.split("/");
       var videoId = parts[parts.length - 1];
-      var watchUrl = "https://vimeo.com/" + videoId;
+      var watchUrl = videoId;
       res.json({ success: true, url: watchUrl });
     },
     // onProgress → server-side logging
