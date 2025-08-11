@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "https://media-five-social-media-agency.webflow.io", // Change to your frontend origin in production
+    origin: "https://collaby123.webflow.io", // Change to your frontend origin in production
     methods: ["POST", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
   })
